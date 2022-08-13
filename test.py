@@ -18,7 +18,7 @@ st.title("Speech Assistant")
 
 col1 , col2, col3 = st.column(3)
 with col1:
-inputtext = st.text_area("Nhập vào")
+text = st.text_area("Nhập vào")
 with col2:
 in_lang = st.selectbox(
     "Chọn ngôn ngữ của bạn",

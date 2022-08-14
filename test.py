@@ -3,10 +3,17 @@ import os
 import time
 import glob
 import os
-
+import pip
 
 from gtts import gTTS
 from googletrans import Translator
+
+def install(package):
+    pip.main(['install', package])
+
+# Example
+if __name__ == '__main__':
+    install('gTTS')
 
 try:
     os.mkdir("temp")

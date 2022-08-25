@@ -8,17 +8,6 @@ import pip
 from gtts import gTTS
 from googletrans import Translator
 
-def install(package):
-    pip.main(['install', package])
-
-# Example
-if __name__ == '__main__':
-    install('gTTS')
-
-try:
-    os.mkdir("temp")
-except:
-    pass
 st.title("Speech Assistant")
 translator = Translator()
 
@@ -114,7 +103,16 @@ if st.button("Dịch"):
     if display_output_text:
         st.markdown(f"## Bản dịch:")
         st.write(f" {output_text}")
+if st.button("Đổi"):
+    result, output_text = text_to_speech(output_language, input_language, text, tld)
+    audio_file = open(f"temp/{result}.mp3", "rb")
+    audio_bytes = audio_file.read()
+    st.markdown(f"## Bản nghe:")
+    st.audio(audio_bytes, format="audio/mp3", start_time=0)
 
+    if display_output_text:
+        st.markdown(f"## Bản dịch:")
+        st.write(f" {output_text}")
 
 def remove_files(n):
     mp3_files = glob.glob("temp/*mp3")

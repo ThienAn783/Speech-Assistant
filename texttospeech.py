@@ -23,9 +23,9 @@ text = st.text_input("Nhập chữ vào")
 
 out_lang = st.selectbox(
     "Chọn ngôn ngữ đầu ra",
-    ("Tiếng Việt", "Tiếng Anh", "Tiếng Hàn","Tiếng Hindi", "Tiếng Nhật"),
+    ("Tiếng Việt", "Tiếng Anh", "Tiếng Hàn","Tiếng Trung", "Tiếng Nhật"),
 )
-language={'Tiếng Anh':'en', 'Tiếng Hindi':'hi','Tiếng Việt':'vi','Tiếng Hàn':'ko','Tiếng Trung':'zh-cn'}
+language={'Tiếng Anh':'en', 'Tiếng Nhật':'ja','Tiếng Việt':'vi','Tiếng Hàn':'ko','Tiếng Trung':'zh-cn'}
 output_language=language[out_lang];
 
 english_accent = st.selectbox(

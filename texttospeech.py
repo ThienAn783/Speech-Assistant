@@ -10,6 +10,11 @@ from gtts import gTTS
 from googletrans import Translator
 from langdetect import detect
 
+try:
+    os.mkdir("temp")
+except:
+    pass
+
 
 st.title("Speech Assistant")
 translator = Translator()

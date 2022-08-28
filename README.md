@@ -7,4 +7,4 @@ Step 3 : Dịch nó thôi :).
      ##Link app <br>
 https://thienan-project-2005.herokuapp.com/
 
-![Demo]:(https://github.com/ThienAn783/project/blob/main/demo.png)
+![Demo](https://github.com/ThienAn783/project/blob/main/demo.png)

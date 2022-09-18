@@ -69,7 +69,7 @@ with col2:
         audio_bytes = audio_file.read()
         st.markdown(f"## Bản nghe:")
         st.audio(audio_bytes, format="audio/mp3", start_time=0)
-        st.write(f"Mã ngôn ngữ của ngôn ngữ này có thể là ",detect(text))
+        st.write(f"Mã ngôn ngữ của văn bản này có thể là ",detect(text))
         
         if display_output_text:
             st.markdown(f"## Bản dịch:")

@@ -1,10 +1,7 @@
-# SPEECH ASSISTANT sử dụng STREAMLIT
-WARNING: ĐÔI KHI NÚT REVERSE SẼ BỊ LỖI NẾU BẠN NHẬP 1 TỪ THAY VÌ CẢ CÂU.
+# SPEECH ASSISTANT (Streamlit based)
+WARNING: REVERSE button will encounter an error if you enter a word instead of a whole sentence.
 USAGE:
-Step 1 : Nhập văn bản vào
-Step 2 : Chọn ngôn ngữ đầu ra mong muốn.
-Step 3 : Dịch nó thôi :).
-     ##Link app <br>
-https://thienan-project-2005.herokuapp.com/
+Step 1 : Enter text
+Step 2 : Choose desired output language.
 
 ![Demo](https://github.com/ThienAn783/project/blob/main/demo.png)
